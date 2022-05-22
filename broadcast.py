@@ -30,7 +30,7 @@ from pyrogram.errors import (
 
 ############## DEĞİŞKENLER ##############
 
-DATABASE_URL = os.environ.get("DATABASE_URL") # MongoDB veritabanınızın url'si. Nasıl alacağınızı bilmiyorsanız destek grubu @RepoHaneX'e gelin.
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://husnu11:husnu11@cluster0.mrx0b.mongodb.net/test?retryWrites=true&w=majority") # MongoDB veritabanınızın url'si. Nasıl alacağınızı bilmiyorsanız destek grubu @RepoHaneX'e gelin.
 BOT_USERNAME = os.environ.get("BOT_USERNAME") # Botunuzun kullanıcı adı.
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL")) # Botunuzun eylemleri kaydedeceği kayıt grubunun id'si.
 GROUP_SUPPORT = os.environ.get("GROUP_SUPPORT", "RepoHaneX") # Botunuzdan yasaklanan kullanıcıların itiraz işlemleri için başvuracağı grup, kanal veya kullanıcı. Boş bırakırsanız otomatik olarak OWNER_ID kimliğine yönlendirecektir.
